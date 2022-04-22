@@ -1,0 +1,158 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Arsclassica Article
+% LaTeX Template
+% Version 1.1 (1/8/17)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Lorenzo Pantieri (http://www.lorenzopantieri.net) with extensive modifications by:
+% Vel (vel@latextemplates.com) and
+% Vanessa Leite (vanessa@ini.uzh.ch)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[
+10pt, % Main document font size
+a4paper, % Paper type, use 'letterpaper' for US Letter paper
+oneside, % One page layout (no page indentation)
+headinclude,footinclude, % Extra spacing for the header and footer
+]{article}
+
+\input{structure.tex} % Include the structure.tex file which specified the document structure and layout
+
+\hyphenation{Fortran hy-phen-ation} % Specify custom hyphenation points in words with dashes where you would like hyphenation to occur, or alternatively, don't put any dashes in a word to stop hyphenation altogether
+
+%----------------------------------------------------------------------------------------
+%	TITLE AND AUTHOR(S)
+%----------------------------------------------------------------------------------------
+
+\title{\normalfont\spacedallcaps{Committee Meeting Report} \\ \large Your title goes here
+} % The title
+
+\author{\spacedlowsmallcaps{Your name\textsuperscript{*}}} % The PhD Candidate - affiliations need to be specified in the AUTHOR AFFILIATIONS block
+
+
+\date{} % An optional date to appear under the author(s)
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+\input{biblio/acronyms}
+
+%----------------------------------------------------------------------------------------
+%	HEADERS
+%----------------------------------------------------------------------------------------
+
+\renewcommand{\sectionmark}[1]{\markright{\spacedlowsmallcaps{#1}}} % The header for all pages (oneside) or for even pages (twoside)
+\lehead{\mbox{\llap{\small\thepage\kern1em\color{halfgray} \vline}\color{halfgray}\hspace{0.5em}\rightmark\hfil}} % The header style
+
+\pagestyle{scrheadings} % Enable the headers specified in this block
+
+
+\maketitle % Print the title/author/date block
+
+%----------------------------------------------------------------------------------------
+%	Committee Members
+%----------------------------------------------------------------------------------------
+
+\section*{Committee}
+Member 1\textsuperscript{*} \hrulefill \\
+Member 2\textsuperscript{*} \hrulefill \\
+Member 3\textsuperscript{1} \hrulefill 
+
+%----------------------------------------------------------------------------------------
+%	TABLE OF CONTENTS & LISTS OF FIGURES AND TABLES
+%----------------------------------------------------------------------------------------
+
+\setcounter{tocdepth}{2} % Set the depth of the table of contents to show sections and subsections only
+
+\tableofcontents % Print the table of contents
+
+\listoffigures % Print the list of figures
+
+%\listoftables % Print the list of tables
+
+%----------------------------------------------------------------------------------------
+%	AUTHOR AFFILIATIONS
+%----------------------------------------------------------------------------------------
+
+\let\thefootnote\relax\footnotetext{* \textit{Institute of Neuroinformatics, University of Zurich and ETH Zurich, Zurich, Switzerland}}
+
+\let\thefootnote\relax\footnotetext{\textsuperscript{1} \textit{Second affiliation}}
+
+%----------------------------------------------------------------------------------------
+
+\newpage % Start the report content on the second page, remove this if you have a longer abstract that goes onto the second page
+
+%----------------------------------------------------------------------------------------
+%	About the thesis - the story being told with this project
+%----------------------------------------------------------------------------------------
+
+\section{About the Thesis Project}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed turpis velit, consectetur eu urna posuere, consectetur pellentesque magna. In a augue vestibulum, varius nisl eu, pretium metus. Suspendisse vel magna leo. Ut id orci non augue suscipit commodo. Morbi nisl turpis, bibendum vestibulum egestas quis, tristique vel lorem. Ut porttitor dolor eget ante aliquam, dapibus commodo turpis dapibus. Etiam vulputate finibus orci, at elementum nunc ultrices at. Morbi neque metus, dignissim eu turpis suscipit, luctus tincidunt neque. Donec justo ante, faucibus et nisl in, efficitur laoreet turpis. Ut ante dolor, pretium eget fermentum vitae, congue id mauris.
+
+Proin sit amet vestibulum dui, at interdum orci. Donec sit amet ex enim. Nullam semper erat metus, at varius quam efficitur vel. Aliquam sit amet ornare leo. Quisque vel nunc enim. Suspendisse sagittis ex vel hendrerit dignissim. Quisque felis diam, pulvinar eu nulla vitae, mollis bibendum nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam id tortor tincidunt, molestie nunc in, rutrum nisi. Nullam egestas quam nulla, vel sollicitudin nibh laoreet a. Morbi aliquam dui eu dictum lacinia. Proin sollicitudin, velit sit amet varius vulputate, nulla lacus scelerisque lorem, et auctor libero nunc quis nulla.
+
+Nunc venenatis nunc at elit convallis ultricies. Integer varius maximus felis eu vulputate. Phasellus feugiat purus eget varius sodales. Praesent semper, diam non scelerisque ultrices, urna velit dapibus leo, quis cursus tellus odio at sem. Vivamus eu lectus sem. Mauris faucibus, eros id tempus tempus, orci sapien iaculis purus, vel tempus mi nulla ac ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porta arcu in tortor hendrerit, non fermentum felis sodales. Phasellus eget mi congue, consectetur orci a, feugiat nisi. Vivamus et tellus sit amet urna gravida feugiat. Nullam pellentesque quam dictum ipsum efficitur dapibus. Integer ullamcorper scelerisque arcu ac vestibulum. Nullam non convallis risus, vitae hendrerit nulla.
+
+ 
+%----------------------------------------------------------------------------------------
+%	Suggestions - what needs to be changed or added 
+%----------------------------------------------------------------------------------------
+
+\section{Suggestions}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed turpis velit, consectetur eu urna posuere, consectetur pellentesque magna. In a augue vestibulum, varius nisl eu, pretium metus. Suspendisse vel magna leo. Ut id orci non augue suscipit commodo. Morbi nisl turpis, bibendum vestibulum egestas quis, tristique vel lorem. Ut porttitor dolor eget ante aliquam, dapibus commodo turpis dapibus. Etiam vulputate finibus orci, at elementum nunc ultrices at. Morbi neque metus, dignissim eu turpis suscipit, luctus tincidunt neque. Donec justo ante, faucibus et nisl in, efficitur laoreet turpis. Ut ante dolor, pretium eget fermentum vitae, congue id mauris.
+
+Proin sit amet vestibulum dui, at interdum orci. Donec sit amet ex enim. Nullam semper erat metus, at varius quam efficitur vel. Aliquam sit amet ornare leo. Quisque vel nunc enim. Suspendisse sagittis ex vel hendrerit dignissim. Quisque felis diam, pulvinar eu nulla vitae, mollis bibendum nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam id tortor tincidunt, molestie nunc in, rutrum nisi. Nullam egestas quam nulla, vel sollicitudin nibh laoreet a. Morbi aliquam dui eu dictum lacinia. Proin sollicitudin, velit sit amet varius vulputate, nulla lacus scelerisque lorem, et auctor libero nunc quis nulla.
+
+Nunc venenatis nunc at elit convallis ultricies. Integer varius maximus felis eu vulputate. Phasellus feugiat purus eget varius sodales. Praesent semper, diam non scelerisque ultrices, urna velit dapibus leo, quis cursus tellus odio at sem. Vivamus eu lectus sem. Mauris faucibus, eros id tempus tempus, orci sapien iaculis purus, vel tempus mi nulla ac ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porta arcu in tortor hendrerit, non fermentum felis sodales. Phasellus eget mi congue, consectetur orci a, feugiat nisi. Vivamus et tellus sit amet urna gravida feugiat. Nullam pellentesque quam dictum ipsum efficitur dapibus. Integer ullamcorper scelerisque arcu ac vestibulum. Nullam non convallis risus, vitae hendrerit nulla.
+
+%----------------------------------------------------------------------------------------
+%	Timeline plan - a gant chart with the suggestions and when they will be done
+%----------------------------------------------------------------------------------------
+
+\section{Timeline Plan}
+
+
+\begin{gantt}[xunitlength=0.8cm,fontsize=\small,titlefontsize=\small,drawledgerline=true]{7}{9}
+	\begin{ganttitle}
+      \titleelement{Jan}{1}
+      \titleelement{Feb}{1}
+      \titleelement{Mar}{1}
+      \titleelement{Apr}{1}
+      \titleelement{May}{1}
+      \titleelement{Jun}{1}
+      \titleelement{Jul}{1}
+      \titleelement{Aug}{1}
+      \titleelement{Sep}{1}
+    \end{ganttitle}
+    \ganttbar{TODO 1}{0}{1}
+	\ganttbar{TODO 2}{0}{3}
+    \ganttbar{TODO 3}{1}{1}
+    \ganttbar{TODO 4}{2}{2}
+    \ganttbar{TODO 5}{2}{3}
+    \ganttbar{TODO 6}{4}{4}
+\end{gantt}
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+
+\renewcommand{\refname}{\spacedlowsmallcaps{References}} % For modifying the bibliography heading
+
+\bibliographystyle{unsrt}
+\bibliography{biblio/biblioncs} % The file containing the bibliography
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
